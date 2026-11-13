@@ -1,0 +1,101 @@
+
+<!DOCTYPE html> <!-- Declares HTML5 -->
+<html lang="en"> <!-- Sets the language to English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Supports standard characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"> <!-- Connects CSS -->
+
+    <title>Insect Catcher</title> <!-- CUSTOM: New page title -->
+
+    <script src="script.js" defer></script> <!-- Connects JavaScript -->
+</head>
+
+<body>
+
+    <!-- FIRST SCREEN: Starting menu -->
+
+    <div class="screen">
+
+        <h1>Insect Catcher</h1> <!-- CUSTOM: New game title -->
+
+        <p>Catch as many insects as you can!</p> <!-- CUSTOM: Instructions -->
+
+        <button class="btn" id="start-btn">Play Game</button>
+        <!-- Button that takes the player to the next screen -->
+
+    </div>
+
+    <!-- SECOND SCREEN: Insect selection -->
+
+    <div class="screen">
+
+        <h1>Choose your insect!</h1>
+
+        <ul class="insects-list"> <!-- List of selectable insects -->
+
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Fly</p>
+                    <img src="https://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+                </button>
+            </li>
+            <!-- Creates the fly selection button -->
+
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Mosquito</p>
+                    <img src="https://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="mosquito">
+                </button>
+            </li>
+            <!-- Creates the mosquito selection button -->
+
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Spider</p>
+                    <img src="https://pngimg.com/uploads/spider/spider_PNG12.png" alt="spider">
+                </button>
+            </li>
+            <!-- Creates the spider selection button -->
+
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Roach</p>
+                    <img src="https://pngimg.com/uploads/roach/roach_PNG12163.png" alt="roach">
+                </button>
+            </li>
+            <!-- Creates the roach selection button -->
+
+        </ul>
+
+    </div>
+
+    <!-- THIRD SCREEN: Actual gameplay -->
+
+    <div class="screen game-container" id="game-container">
+
+        <h3 id="time" class="time">Time: 00:00</h3>
+        <!-- Displays elapsed time -->
+
+        <h3 id="score" class="score">Score: 0</h3>
+        <!-- Displays current score -->
+
+        <h3 id="high-score" class="high-score">Best: 0</h3>
+        <!-- CUSTOM: Displays the player's highest score -->
+
+        <h5 id="message" class="message">
+            The insects are taking over!
+            <br>
+            Keep catching them!
+        </h5>
+        <!-- CUSTOM: Changed warning message -->
+
+        <button class="btn" id="restart-btn">Restart</button>
+        <!-- CUSTOM: Button that restarts the game -->
+
+    </div>
+
+</body>
+</html>
